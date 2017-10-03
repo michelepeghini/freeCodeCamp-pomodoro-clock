@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>freeCodeCamp: </title>	<!-- TITLE -->
+  	<meta name="author" content="Michele Peghini">
+	<meta name="description" content=""> <!-- DESCRIPTION -->
+	<meta name="keywords" content="HTML5,CSS3,JSON,JavaScript,jQuery,Bootstrap,freeCodeCamp,weatherApp"> <!-- TAGS, CSV -->
+	
+	<!-- CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- LOCALS -->
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="styles.css">	
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="top_header" class="text-center">freeCodeCamp: Pomoodro Clock</h1>
+    
+    <!-- Pomododo START -->
+    <div id="pomodoro_clock" class="panel panel-default">
+      <div class="panel panel-heading text-center">
+        <h3>freeCodeCamp: <span>Pomodoro Clock</span></h3>
+      </div>
+      <div class="panel panel-body">
+        <p id="timer" class="text-center">
+          <span id="timer_mins">00</span>
+          <span>&colon;</span>
+          <span id="timer_secs">00</span>
+        </p>
+        <div id="controls" class="row">
+          <div class="col-xs-3 text-center">
+            <button id="play" class="btn btn-default control">
+              <span class="glyphicon glyphicon-play"></span>  
+            </button>  
+          </div>
+          <div class="col-xs-3 text-center">
+            <button id="pause" class="btn btn-default">
+              <span class="glyphicon glyphicon-pause"></span>
+            </button>  
+          </div>
+          <div class="col-xs-3 text-center">
+            <button id="stop" class="btn btn-default">
+              <span class="glyphicon glyphicon-stop"></span>
+            </button>
+          </div>
+          <div class="col-xs-3 text-center">
+            <button id="skip" class="btn btn-default" >
+              <span class="glyphicon glyphicon-fast-forward"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-footer">
+        <div id="session" class="footer_element">
+          <h3 class="text-center">Session</h3>
+          <div class="time_settings">
+            <span class="glyphicon glyphicon-plus"></span>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="increment" data-quantity="1">1</button>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="increment" data-quantity="5">5</button>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="increment" data-quantity="10">10</button>  
+          </div>
+          <div class="time_settings">
+            <input id="session_time" type="number" readonly>  
+          </div>
+          <div class="time_settings">
+            <span class="glyphicon glyphicon-minus"></span>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="decrement" data-quantity="1">1</button>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="decrement" data-quantity="5">5</button>
+            <button class="btn btn-default" data-timer-type="sessionTime" data-operation="decrement" data-quantity="10">10</button>  
+          </div>
+        </div>
+        <div id="break" class="footer_element">
+          <h3 class="text-center">Break</h3>
+          <div class="time_settings">
+            <span class="glyphicon glyphicon-plus"></span>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="increment" data-quantity="1">1</button>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="increment" data-quantity="5">5</button>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="increment" data-quantity="10">10</button>  
+          </div>
+          <div class="time_settings">
+            <input id="break_time" type="number" readonly> 
+          </div>
+          <div class="time_settings">
+            <span class="glyphicon glyphicon-minus"></span>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="decrement" data-quantity="1">1</button>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="decrement" data-quantity="5">5</button>
+            <button class="btn btn-default" data-timer-type="breakTime" data-operation="decrement" data-quantity="10">10</button>  
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Pomododo END -->
+    
+    <footer id="credits" class="content_block text-center">
+      <h2>Credits:</h2>
+      <div class="row">
+        <div class="col-xs-12">
+          <!--<p class="text-center">Wiki Quote API thanks to: <a href="https://github.com/natetyler/wikiquotes-api" target="_blank">Nate Tyler</a></p>-->
+        </div>
+      </div>
+      
+      <h2>Author: <span>Michele Peghini</span></h2> 
+      <div class="row">
+        <p class="col-sm-4"><a href="https://codepen.io/michele_peghini/pens/public/" target="_blank">CodePen</a></p>
+        <p class="col-sm-4"><a href="https://github.com/michelepeghini" target="_blank">GitHub</a></p>
+        <p class="col-sm-4"><a href="https://www.freecodecamp.org/michelepeghini" target="_blank">freeCodeCamp</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+ 
