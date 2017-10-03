@@ -7,7 +7,7 @@ function Pomodoro() {
   var timer; // stores interval
   var timerState = 'session';
   const sessionColor = '#006400'; // session panel color, used for timer color when session
-  const breakColor = '#640000'; // break panel color, used for timer color when break
+  const breakColor = '#8f0000'; // break panel color, used for timer color when break
   const stopColor = '#333'; // used for timer color when stopped
   
   // DOM elements

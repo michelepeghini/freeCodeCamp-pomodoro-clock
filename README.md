@@ -31,7 +31,15 @@ This is a stand alone single page app, all external libraries needed are either 
 
 ## Screenshots
 
-![###](/###.png "###")
+**Desktop view**, Session Time
+
+![Session](/pomodoro-clock-desktop.png "Session")
+
+-------------------
+
+**Mobile view**, Break Time
+
+![Break](/pomodoro-clock-mobile.png "Break Time")
 
 ## APIs / Libraries used
 
