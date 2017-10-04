@@ -1,4 +1,4 @@
-# freeCodeCamp: 
+# freeCodeCamp: Pomodoro Clock
 
 This is a Pomodoro Clock developed for the freeCodeCamp Front End Certificate. It has adjustable Session and break times and Play, Pause, Stop and Skip buttons.
 
